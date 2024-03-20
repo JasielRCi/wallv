@@ -12,7 +12,7 @@ class DB{
         $this->db       = 'phpmyadmin';
         $this->user     = 'root';
         $this->password = "";
-        $this->charset  = 'utf8mb4root';
+        $this->charset  = 'utf8mb4';
     }
 
     function connect(){
