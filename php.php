@@ -9,8 +9,8 @@
         public function userExisit($usu,$contra){
             $md5pass = md5($contra);
 
-            $query = $this->connect()->prepare('SELECT * FROM  iniciosesion where Nusuario = :usu AND Contra = :contra ');
-            $query->execute(['usu' => $usu,'Contra'=> $md5pass]);
+            $query = $this->connect()->prepare('SELECT * FROM  iniciosesion where Nusuario = ' . $usu  . 'AND Contra = ' . $contra);
+            $query->execute(['Nusuario' => $usu,'Contra'=> $md5pass]);
 
             if( $query->rowCount()){
                 return true;

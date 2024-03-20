@@ -1,6 +1,6 @@
 <?php
-    include_once 'includes/php.php';
-    include_once 'includes/usersesion.php';
+    include_once 'php.php';
+    include_once 'usersesion.php';
 
     $userSesion = new Usersesion();
     $user = new User();
@@ -18,14 +18,14 @@
             $userSesion->setCurrentUser($userForm);
             $user->setUsu($userForm);
 
-            include_once 'login/home.html';
+            include_once 'home.html';
 
         }else{
             //echo 'Nombre de Usuario y/o incorrecto';
             $errorLogin = "Nombre de Usuario y/o incorrecto";
-            include_once 'login/index.html';
+            include_once 'index.php';
         }
     }else {
         echo "Login";
-        include_once 'login/index.php';
+        include_once 'index.php';
     }

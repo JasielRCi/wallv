@@ -17,15 +17,13 @@
         
         <div class="centrado">
             
-        
+         
             
 
             <form action="" method="POST">
 
               <?php
-                if(isset($errorLogin)){
-                  echo $errorLogin;
-                }
+              include_once 'indexphp.php';
               ?>
                     <div class="tbox">
                         <label for="nombre" id="nombrelbl">Usuario</label>
@@ -35,7 +33,7 @@
                         <label for="password" id="passwordlbl" >Contraseña</label>
                         <input type="password" name='password' placeholder="Ingrese su contraseña">
                     </div>
-                    <button class="btn">Entrar</button>
+                    <input class="btn" type='submit'>Entrar</input>
             </form>
         </div>
       </div>
@@ -46,12 +44,5 @@
           
         </div>
       </div>
-
-
-  
-
-
-
-
 </body>
 </html>

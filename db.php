@@ -9,10 +9,10 @@ class DB{
 
     public function __construct(){
         $this->host     = 'localhost';
-        $this->db       = 'phpmysql';
+        $this->db       = 'phpmyadmin';
         $this->user     = 'root';
-        $this->password = "123!\"·QWE";
-        $this->charset  = 'utf8mb4';
+        $this->password = "";
+        $this->charset  = 'utf8mb4root';
     }
 
     function connect(){
@@ -33,10 +33,3 @@ class DB{
         }   
     }
 }
-
-
-
-
-
-
-?>
